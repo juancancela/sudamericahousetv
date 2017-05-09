@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>sudamericahousetv &mdash;</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="El principal objetivo de Sudamérica House Tv SRL es ofrecer a nuestros clientes servicios de calidad tanto en intermediación, planificación, desarrollo, ejecución y control de estructuras de trabajo integrales o dinámicas." />
+	<meta name="description" content="El principal objetivo de Sudamérica House Tv SRL es ofrecer a nuestros clientes servicios de calidad tanto en intermediación, planificación, desarrollo, ejecución y control de estructuras de trabajo integrales o dinámicas."
+	/>
 	<meta name="keywords" content="callcenter, llamadas, servicios, outsourcing" />
 	<meta name="author" content="juancancela.work" />
 
@@ -53,12 +54,16 @@
 			lang = lang || 'en';
 			switch (lang) {
 				case 'en':
-                    localStorage.setItem("current_lang", "en");
-					$("[data-localize]").localize("js/locales", { language: "en" });
+					localStorage.setItem("current_lang", "en");
+					$("[data-localize]").localize("js/locales", {
+						language: "en"
+					});
 					break;
 				case 'sp':
-				    localStorage.setItem("current_lang", "sp");
-					$("[data-localize]").localize("js/locales", { language: "sp" });
+					localStorage.setItem("current_lang", "sp");
+					$("[data-localize]").localize("js/locales", {
+						language: "sp"
+					});
 					break;
 			}
 		}
@@ -72,12 +77,20 @@
 			<div class="ubea-container">
 				<div class="row">
 					<div class="col-sm-2 col-xs-12">
-						<div id="ubea-logo"><a href="index.html">sudamericahousetv </a></div>
+						<div id="ubea-logo">
+							<a href="index.html"><img src="images/logo.png" style="max-width:200px"></a>
+						</div>
 					</div>
 					<div class="col-xs-10 text-right menu-1 main-nav">
-						<ul>
+						<ul style="margin-top: 6px">
 							<li class="active">
 								<a href="#" data-nav-section="home" data-localize="HOME_TITLE"></a>
+							</li>
+							<li>
+								<a href="#" data-nav-section="workflows" data-localize="WORKFLOWS_TITLE"></a>
+							</li>
+							<li>
+								<a href="#" data-nav-section="marketing" data-localize="MARKETING_TITLE"></a>
 							</li>
 							<li>
 								<a href="#" data-nav-section="callcenter-services" data-localize="CALLCENTER_TITLE"></a>
@@ -88,12 +101,12 @@
 							<li>
 								<a href="#" data-nav-section="contact" data-localize="CONTACT_TITLE"></a>
 							</li>
-							<li>
+							<!--<li>
 								<a href="#" onclick="switchLanguage('en');"><img src="images/us_flag.svg" alt="English Version" height="20px"></a>
 							</li>
 							<li>
 								<a href="#" onclick="switchLanguage('sp');"><img src="images/ar_flag.svg" alt="Spanish Version" height="20px"></a>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
@@ -147,8 +160,45 @@
 			</div>
 		</div>
 
-		<div class="ubea-section-overflow">
 
+
+		<div class="ubea-section-overflow">
+			<div class="ubea-section" id="ubea-services" data-section="workflows">
+				<div class="ubea-container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="ubea-heading">
+								<h2 class="ubea-left" data-localize="WORKFLOWS_TITLE"></h2>
+								<p data-localize="WORKFLOWS_DESCRIPTION"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="ubea-section-overflow">
+			<div class="ubea-section" id="ubea-services" data-section="marketing">
+				<div class="ubea-container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="ubea-heading">
+								<h2 class="ubea-left" data-localize="MARKETING_TITLE"></h2>
+								<p data-localize="MARKETING_DESCRIPTION"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="ubea-section-overflow">
 			<div class="ubea-section" id="ubea-services" data-section="callcenter-services">
 				<div class="ubea-container">
 					<div class="row">
@@ -156,14 +206,6 @@
 							<div class="ubea-heading">
 								<h2 class="ubea-left" data-localize="CALLCENTER_TITLE"></h2>
 								<p data-localize="CALLCENTER_DESCRIPTION"></p>
-							</div>
-						</div>	
-					</div>	
-					<div class="row">
-						<div class="col-md-12">
-							<div class="ubea-heading">
-								<h2 class="ubea-left" data-localize="SERVICES_INCOMING_TITLE"></h2>
-								<p data-localize="SERVICES_INCOMING_CALL_DESCRIPTION"></p>
 							</div>
 						</div>
 					</div>
@@ -173,7 +215,7 @@
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_INCOMING_LIST_ITEM_1_TITLE"></h3>
 											<p data-localize="SERVICE_INCOMING_LIST_ITEM_1_DETAILS"></p>
@@ -183,7 +225,7 @@
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_INCOMING_LIST_ITEM_2_TITLE"></h3>
 											<p data-localize="SERVICE_INCOMING_LIST_ITEM_2_DETAILS"></p>
@@ -193,21 +235,17 @@
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_INCOMING_LIST_ITEM_3_TITLE"></h3>
 											<p data-localize="SERVICE_INCOMING_LIST_ITEM_3_DETAILS"></p>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeIn">
-							<div class="row">
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-exchange fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_INCOMING_LIST_ITEM_4_TITLE"></h3>
 											<p data-localize="SERVICE_INCOMING_LIST_ITEM_4_DETAILS"></p>
@@ -217,71 +255,20 @@
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-cube fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_INCOMING_LIST_ITEM_5_TITLE"></h3>
 											<p data-localize="SERVICE_INCOMING_LIST_ITEM_5_DETAILS"></p>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="ubea-section" id="ubea-services" data-section="outcoming-services">
-				<div class="ubea-container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="ubea-heading">
-								<h2 class="ubea-left" data-localize="SERVICES_OUTCOMING_TITLE"></h2>
-								<p data-localize="SERVICES_OUTCOMING_CALL_DESCRIPTION"></p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="row">
-
-								<div class="col-md-12">
-									<div class="feature-left">
-										<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
-									</span>
-										<div class="feature-copy">
-											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_1_TITLE"></h3>
-											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_1_DETAILS"></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="feature-left">
-										<i class="fa fa-database fa-3x" aria-hidden="true"></i>
-									</span>
-										<div class="feature-copy">
-											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_2_TITLE"></h3>
-											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_2_DETAILS"></p>
-										</div>
-									</div>
-								</div>
 								<div class="col-md-12">
 									<div class="feature-left">
 										<i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
 										<div class="feature-copy">
-											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_3_TITLE"></h3>
-											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_3_DETAILS"></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="feature-left">
-										<i class="fa fa-money fa-3x" aria-hidden="true"></i>
-									</span>
-										<div class="feature-copy">
-											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_7_TITLE"></h3>
-											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_7_DETAILS"></p>
+											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_1_TITLE"></h3>
+											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_1_DETAILS"></p>
 										</div>
 									</div>
 								</div>
@@ -291,8 +278,28 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="feature-left">
+										<i class="fa fa-money fa-3x" aria-hidden="true"></i>
+										</span>
+										<div class="feature-copy">
+											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_2_TITLE"></h3>
+											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_2_DETAILS"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="feature-left">
 										<i class="fa fa-gear fa-3x" aria-hidden="true"></i>
-									</span>
+										</span>
+										<div class="feature-copy">
+											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_3_TITLE"></h3>
+											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_3_DETAILS"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="feature-left">
+										<i class="fa fa-group fa-3x" aria-hidden="true"></i>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_4_TITLE"></h3>
 											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_4_DETAILS"></p>
@@ -301,8 +308,8 @@
 								</div>
 								<div class="col-md-12">
 									<div class="feature-left">
-										<i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i>
-									</span>
+										<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_5_TITLE"></h3>
 											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_5_DETAILS"></p>
@@ -311,11 +318,21 @@
 								</div>
 								<div class="col-md-12">
 									<div class="feature-left">
-										<i class="fa fa-group fa-3x" aria-hidden="true"></i>
-									</span>
+										<i class="fa fa-database fa-3x" aria-hidden="true"></i>
+										</span>
 										<div class="feature-copy">
 											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_6_TITLE"></h3>
 											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_6_DETAILS"></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="feature-left">
+										<i class="fa fa-money fa-3x" aria-hidden="true"></i>
+										</span>
+										<div class="feature-copy">
+											<h3 data-localize="SERVICE_OUTCOMING_LIST_ITEM_7_TITLE"></h3>
+											<p data-localize="SERVICE_OUTCOMING_LIST_ITEM_7_DETAILS"></p>
 										</div>
 									</div>
 								</div>
@@ -324,91 +341,80 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<div id="ubea-blog" data-section="about">
 			<div class="ubea-container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center ubea-heading">
+					<div class="col-md-12 ubea-heading">
 						<h2 data-localize="ABOUT_US_TITLE"></h2>
 						<p data-localize="ABOUT_US_DETAILS"></p>
 					</div>
 				</div>
-				<!--<div class="row">
+				<div class="row">
 					<div class="col-md-6">
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_1_TITLE"></h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_1_DETAILS"></p>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-headphones fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_1_TITLE"></h3>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_2_TITLE"></h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_2_DETAILS"></p>
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_2_TITLE"></h3>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_3_TITLE"></h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_3_DETAILS"></p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-6">
-
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_4_TITLE"></h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_4_DETAILS"></p>
-								</div>
-							</div>
-						</div>
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_5_TITLE"></h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_5_DETAILS"></p>
-								</div>
-							</div>
-						</div>
-						<div class="ubea-accordion">
-							<div class="ubea-accordion-heading">
-								<div class="icon"><i class="icon-cross"></i></div>
-								<h3 data-localize="ABOUT_US_ITEM_6_TITLE">Is uBeasa free?</h3>
-							</div>
-							<div class="ubea-accordion-content">
-								<div class="inner">
-									<p data-localize="ABOUT_US_ITEM_6_DETAILS"></p>
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_3_TITLE"></h3>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>-->
+					<div class="col-md-6 animate-box" data-animate-effect="fadeIn">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-money fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_4_TITLE"></h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-gear fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_5_TITLE"></h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="feature-left">
+									<i class="fa fa-group fa-3x" aria-hidden="true"></i>
+									</span>
+									<div class="feature-copy">
+										<h3 data-localize="ABOUT_US_ITEM_6_TITLE"></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="ubea-contact" data-section="contact" class="ubea-cover ubea-cover-xs" style="background-image:url(images/img_bg_2.jpg);">
@@ -476,9 +482,13 @@
 		<script>
 			var currentLanguage = localStorage.getItem("current_lang");
 			if (!currentLanguage) {
-				$("[data-localize]").localize("js/locales", { language: "sp" });
+				$("[data-localize]").localize("js/locales", {
+					language: "sp"
+				});
 			} else {
-				$("[data-localize]").localize("js/locales", { language: currentLanguage });
+				$("[data-localize]").localize("js/locales", {
+					language: currentLanguage
+				});
 			}
 		</script>
 </body>
